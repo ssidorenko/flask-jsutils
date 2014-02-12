@@ -1,6 +1,6 @@
 {% autoescape false %}
 
-var flask_util = function() {
+var flask_jsutils = function() {
     var rule_map = {{ rule_map }};
 
     function url_for(endpoint, params) {
