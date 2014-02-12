@@ -1,3 +1,26 @@
 Flask-JSUtils
+=============
 
-Flask utilities in your javascript
+Flask-JSUtils is a `Flask <http://flask.pocoo.org/>`_ extension that lets you use url_for() in your javascript.
+
+Installation
+------------
+
+pip install flask-jsutils
+
+Usage
+-----
+
+In your application setup, with app being your flask application:
+
+    from flask.ext.jsutils import JSUtils
+    JSUtils(app)
+
+In your template:
+
+    {{ jsutils.js_link }}
+
+or if you want the javascript to be rendered right inside your template 
+
+    {{ jsutils.js_content }}
+
